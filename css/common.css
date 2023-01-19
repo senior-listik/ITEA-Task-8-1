@@ -67,19 +67,6 @@ body{
     font-weight: 500;
    
 }
-.about{
-    height: 100vh;
-    background: url(../img/bg1.jpg) 50%/cover no-repeat;
-}
-.about__grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 25vh);
-}
-.about__gridItem{
-    position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.272);
-}
 .fa-plus {
     color: #ffffff94;
     position: absolute;
@@ -89,61 +76,45 @@ body{
     font-size: 20px;
     z-index: 0;
 }
-.about__gridItem:nth-child(-n + 4){
-    text-align: right;
-    padding: 3px 15px;
-    color:rgba(255, 255, 255, 0.47);
-    font-size: 20px;
+.logo {
+    font-size: 50px;
+    line-height: 1;
+    color: #ffffff;
 }
-.about__gridItem:nth-child(14n + 2){
-        
+.logo--small {
+    font-size: 6px;
+    color: #ffffff;
+    font-weight: normal;
 }
-.about__gridItem:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1/4;
-    background: rgb(158, 11, 11);
-    z-index: 10;
-}
-.about__gridItem:nth-child(6) {
-    grid-column: 6;
-        grid-row: 1;
-        background: rgb(158, 11, 11);
-        z-index: 10;
-}
-
-.about__gridItem:nth-child(n + 17):nth-child(-n + 19){
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.47);
-    font-size: 20px;
-    backdrop-filter: blur(5px);
-    position: relative;
-}
-.about__gridItem:nth-child(n + 17):nth-child(-n + 19) > span {
+.numbers {
     position: absolute;
     top: 5px;
-    left: 15px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.47);
+    font-size: 20px;
 }
-.about__gridItem:nth-child(n + 17):nth-child(-n + 19) > a{
-   text-align: center;
-   text-decoration: none;
-    color: rgba(255, 255, 255, 0.47);   
+.contact, .menu {
+    font-family: 'Oswald';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
 }
-.about__gridItem:nth-child(n + 17):nth-child(-n + 19)>a:hover {
-    color: rgb(158, 11, 11);
-}
-.about__gridItem:nth-child(n + 17):nth-child(-n + 19) > a > span {
-    display: block;
-    margin-top: 10px;
-}
-.about__gridItem:nth-child(22){
+.point{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.294);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    font-size: 100px;
-    font-weight: 500;
-    letter-spacing: 15px;
+}
+.inPoint{
+    background: rgba(158, 11, 11, 0.613);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
 }
