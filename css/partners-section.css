@@ -1,0 +1,58 @@
+.partners {
+    height: 100vh;
+    background: #2e2934;
+}
+
+.partners__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 25vh);
+}
+
+.partners__gridItem {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.272);
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.partners__gridItem:nth-child(-n + 6) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.partners__gridItem:nth-child(-n + 3) {
+    border-top: 3px solid rgba(255, 255, 255, 0.813);
+}
+
+.partners__gridItem:nth-child(3) .numbers {
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: 700;
+}
+.partners__gridItem:nth-child(6) {
+    grid-column: 6;
+    grid-row: 1;
+    background: rgb(158, 11, 11);
+    z-index: 10;
+}
+.partners__gridItem:nth-child(8), 
+.partners__gridItem:nth-child(10),
+.partners__gridItem:nth-child(2n + 13),
+.partners__gridItem:nth-child(2n + 20) {
+    background: #3e3a44;
+    color: rgba(255, 255, 255, 0.394);
+    font-size: 60px;
+}
+.patrners__title {
+    color:rgba(255, 255, 255, 0.189);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.partners__gridItem:nth-child(2n + 19){
+    background: #2e2934;
+}
