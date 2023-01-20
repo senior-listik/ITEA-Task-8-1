@@ -7,7 +7,32 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 25vh);
 }
-.about__gridItem {
+.team__gridItem {
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.272);
+}
+.team__gridItem:nth-child(-n + 2) {
+    border-top: 3px solid rgba(255, 255, 255, 0.813);
+}
+.team__gridItem:nth-child(2) .numbers {
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: 700;
+}
+.team__gridItem:nth-child(-n + 6) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.team__gridItem:nth-child(6) {
+    grid-column: 6;
+    grid-row: 1;
+    background: rgb(158, 11, 11);
+    z-index: 10;
+}
+.team__gridItem:nth-child(8) {
+    grid-column: 2/6;
+    grid-row: 2/4;
+    background: rgb(158, 11, 11);
+    z-index: 10;
 }

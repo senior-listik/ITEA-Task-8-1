@@ -92,6 +92,7 @@ body{
     right: 15px;
     color: rgba(255, 255, 255, 0.47);
     font-size: 20px;
+    text-decoration: none;
 }
 .contact, .menu {
     font-family: 'Oswald';
