@@ -43,7 +43,6 @@
 .partners__gridItem:nth-child(2n + 13),
 .partners__gridItem:nth-child(2n + 20) {
     background: #3e3a44;
-    color: rgba(255, 255, 255, 0.394);
     font-size: 60px;
 }
 .patrners__title {
@@ -55,4 +54,13 @@
 
 .partners__gridItem:nth-child(2n + 19){
     background: #2e2934;
+}
+
+.partners__gridItem:nth-child(2n + 13) a,
+.partners__gridItem:nth-child(2n + 20) a {
+    color: rgba(255, 255, 255, 0.394);
+}
+.partners__gridItem:nth-child(2n + 13) a:hover,
+.partners__gridItem:nth-child(2n + 20) a:hover {
+    color: rgba(9, 72, 233, 0.633);
 }
