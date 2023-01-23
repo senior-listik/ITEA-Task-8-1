@@ -114,8 +114,8 @@ body{
     justify-content: center;
 }
 .inPoint{
-    background: rgba(158, 11, 11, 0.613);
-    width: 8px;
-    height: 8px;
+    background: rgba(173, 14, 14, 0.735);
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
 }
